@@ -1,0 +1,24 @@
+{
+    "appDir": "../app",
+    "baseUrl": "./",
+    "paths": {
+        "requireLib": "./scripts/require",
+        "domReady": "./scripts/domReady",
+        "lodash": "../components/lodash/lodash"
+    },
+    "cjsTranslate": true,
+    "packages": [{
+            "name": "js-bsdc-model",
+            "location": "js-bsdc-model",
+            "main": "main"
+        }
+    ],
+    "modules": [{
+            "name": "main",
+            "include": ["main", "requireLib"]
+        }
+    ],
+    "optimize": "none",
+    "generateSourceMaps": true,
+    "dir": "../app-debug"
+}
