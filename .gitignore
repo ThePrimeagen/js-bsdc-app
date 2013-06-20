@@ -16,5 +16,5 @@ npm-debug.log
 node_modules/
 app-debug/*
 components/*
-node_app/db*
+node_app/db/*
 .idea
