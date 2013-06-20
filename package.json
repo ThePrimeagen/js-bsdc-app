@@ -6,7 +6,8 @@
     "contributors": [
     ],
     "dependencies": {
-        "js-bsdc-model" : "git+https://github.com/sksizer/js-bsdc-model.git"
+        "js-bsdc-model" : "git+https://github.com/sksizer/js-bsdc-model.git",
+        "sqlite3": "*"
     },
     "devDependencies": {
     },
