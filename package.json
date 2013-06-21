@@ -11,6 +11,7 @@
         "lodash" : "*"
     },
     "devDependencies": {
+        "nodemon" : "*"
     },
     "license": "MIT",
     "engines": {
