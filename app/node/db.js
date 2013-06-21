@@ -11,7 +11,7 @@ db.serialize(function() {
     });
 
     if (count === 0) {
-        db.run("CREATE TABLE models (data TEXT, generation INT)");
+        db.run("CREATE TABLE models (data TEXT, generation INTEGER PRIMARY KEY AUTOINCREMENT)");
     }
 });
 
