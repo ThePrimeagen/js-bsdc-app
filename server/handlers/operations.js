@@ -1,20 +1,18 @@
-function get(req, res) {
-    console.log('get');
-    res.end('get');
-}
+var _ = require('lodash');
+var baseHandler = require('./base')();
+var handler = _.assign({
+    get: function(req, res) {
+        res.end('operations end');
+    },
+    put: function(req, res) {
+        res.end('operations put');
+    },
+    post: function(req, res) {
+        res.end('operations post');
+    },
+    del: function(req, res) {
+        res.end('operations delete');
+    }
+}, baseHandler);
 
-function list(req, res) {
-    console.log('list');
-    res.end('list');
-}
-
-function update(req, res) {
-    console.log('update');
-    res.end('update');
-}
-
-module.exports = {
-    get: get,
-    list: list,
-    update: update
-};
+module.exports = handler;

@@ -11,7 +11,7 @@ var app = connect()
     })
     .use('/operations', function(req, res) {
         console.log('operations');
-        operationsHandler.list(req, res);
+        operationsHandler.handleRequest(req, res);
     })
     .listen(3000);
 
