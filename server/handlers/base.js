@@ -2,30 +2,6 @@ function throwNotImplemented() {
     throw new Error('Method not implemented');
 }
 
-var BaseHandler = function() {
-    console.log('BaseHandler#constructor');
-};
-
-BaseHandler.prototype = {
-    handleRequest: function(req, res) {
-        console.log(req);
-    },
-    get: function(req, res) {
-        throwNotImplemented();
-    },
-    put: function(req, res) {
-        throwNotImplemented();
-    },
-    post: function(req, res) {
-        throwNotImplemented();
-    },
-    delete: function(req, res) {
-        throwNotImplemented();
-    }
-
-
-};
-
 module.exports = function() {
     return {
         handleRequest: function(req, res) {
