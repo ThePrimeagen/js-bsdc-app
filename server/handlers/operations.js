@@ -2,7 +2,7 @@ var _ = require('lodash');
 var baseHandler = require('./base')();
 var handler = _.assign({
     get: function(req, res) {
-        res.end('operations end');
+        res.end('operations get');
     },
     put: function(req, res) {
         res.end('operations put');

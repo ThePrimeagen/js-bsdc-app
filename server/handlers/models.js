@@ -1,8 +1,8 @@
 var _ = require('lodash');
 var baseHandler = require('./base')();
-var handler = _.assign({
+var handler = _.assign(baseHandler, {
     get: function(req, res) {
-        res.end('models end');
+        res.end('models get');
     },
     put: function(req, res) {
         res.end('models put');
@@ -13,6 +13,6 @@ var handler = _.assign({
     del: function(req, res) {
         res.end('models delete');
     }
-}, baseHandler);
+});
 
 module.exports = handler;
