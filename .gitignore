@@ -16,5 +16,6 @@ npm-debug.log
 node_modules/
 app-debug/*
 components/*
-node_app/db/*
+app/node/db/*
 .idea
+app/js-bsdc-model
